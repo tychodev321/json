@@ -52,6 +52,59 @@
           ]
         }
       }
+    },
+    {
+      "id": "5464",
+      "name": "devcon-demo-4",
+      "sourceControlOrgs": [
+        {
+          "name": "devcon-demo-4",
+          "managed": true,
+          "environment": "prod",
+          "config": {
+            "description": "devcon-demo-4",
+            "billingEmail": "devcon-demo-4@acme.com",
+            "blog": "",
+            "email": "devcon-demo-4@acme.com"
+          }
+        }
+      ],
+      "secrets": {
+        "vault": {
+          "namespaces": [
+            {
+              "environment": "prod",
+              "name": "devcon-demo-4",
+              "managed": true
+            }
+          ]
+        }
+      },
+      "artifacts": {
+        "artifactory": {
+          "repositories": [
+            {
+              "name": "devcon-demo-4",
+              "managed": true,
+              "environment": "prod",
+              "config": {
+                "enableCocoapodsLocalRepository": false,
+                "enableCondaLocalRepository": false,
+                "enableDockerV2LocalRepository": true,
+                "enableGenericLocalRepository": false,
+                "enableGoLocalRepository": false,
+                "enableGradleLocalRepository": false,
+                "enableHelmLocalRepository": false,
+                "enableMavenLocalRepository": false,
+                "enableNpmLocalRepository": false,
+                "enablePypiLocalRepository": false,
+                "enableSbtLocalRepository": false,
+                "enableSwiftLocalRepository": false
+              }
+            }
+          ]
+        }
+      }
     }
   ]
 }
