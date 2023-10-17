@@ -7,7 +7,7 @@
         {
           "name": "devcon-demo-2",
           "managed": true,
-          "environment": "prod",
+          "environment": "nonprod",
           "config": {
             "description": "devcon-demo-2",
             "billingEmail": "devcon-demo-2@acme.com",
@@ -20,7 +20,7 @@
         "vault": {
           "namespaces": [
             {
-              "environment": "prod",
+              "environment": "nonprod",
               "name": "devcon-demo-2",
               "managed": true
             }
@@ -33,7 +33,7 @@
             {
               "name": "devcon-demo-2",
               "managed": true,
-              "environment": "prod",
+              "environment": "nonprod",
               "config": {
                 "enableCocoapodsLocalRepository": false,
                 "enableCondaLocalRepository": false,
@@ -60,7 +60,7 @@
         {
           "name": "devcon-demo-3",
           "managed": true,
-          "environment": "prod",
+          "environment": "nonprod",
           "config": {
             "description": "devcon-demo-3",
             "billingEmail": "devcon-demo-4@acme.com",
@@ -73,7 +73,7 @@
         "vault": {
           "namespaces": [
             {
-              "environment": "prod",
+              "environment": "nonprod",
               "name": "devcon-demo-3",
               "managed": true
             }
@@ -86,7 +86,7 @@
             {
               "name": "devcon-demo-3",
               "managed": true,
-              "environment": "prod",
+              "environment": "nonprod",
               "config": {
                 "enableCocoapodsLocalRepository": false,
                 "enableCondaLocalRepository": false,
@@ -113,7 +113,7 @@
         {
           "name": "devcon-demo-4",
           "managed": true,
-          "environment": "prod",
+          "environment": "nonprod",
           "config": {
             "description": "devcon-demo-4",
             "billingEmail": "devcon-demo-4@acme.com",
@@ -126,7 +126,7 @@
         "vault": {
           "namespaces": [
             {
-              "environment": "prod",
+              "environment": "nonprod",
               "name": "devcon-demo-4",
               "managed": true
             }
@@ -139,7 +139,113 @@
             {
               "name": "devcon-demo-4",
               "managed": true,
-              "environment": "prod",
+              "environment": "nonprod",
+              "config": {
+                "enableCocoapodsLocalRepository": false,
+                "enableCondaLocalRepository": false,
+                "enableDockerV2LocalRepository": true,
+                "enableGenericLocalRepository": false,
+                "enableGoLocalRepository": false,
+                "enableGradleLocalRepository": false,
+                "enableHelmLocalRepository": false,
+                "enableMavenLocalRepository": false,
+                "enableNpmLocalRepository": false,
+                "enablePypiLocalRepository": false,
+                "enableSbtLocalRepository": false,
+                "enableSwiftLocalRepository": false
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "7832",
+      "name": "devcon-demo-5",
+      "sourceControlOrgs": [
+        {
+          "name": "devcon-demo-5",
+          "managed": true,
+          "environment": "nonprod",
+          "config": {
+            "description": "devcon-demo-5",
+            "billingEmail": "devcon-demo-5@acme.com",
+            "blog": "",
+            "email": "devcon-demo-5@acme.com"
+          }
+        }
+      ],
+      "secrets": {
+        "vault": {
+          "namespaces": [
+            {
+              "environment": "nonprod",
+              "name": "devcon-demo-5",
+              "managed": true
+            }
+          ]
+        }
+      },
+      "artifacts": {
+        "artifactory": {
+          "repositories": [
+            {
+              "name": "devcon-demo-5",
+              "managed": true,
+              "environment": "nonprod",
+              "config": {
+                "enableCocoapodsLocalRepository": false,
+                "enableCondaLocalRepository": false,
+                "enableDockerV2LocalRepository": true,
+                "enableGenericLocalRepository": false,
+                "enableGoLocalRepository": false,
+                "enableGradleLocalRepository": false,
+                "enableHelmLocalRepository": false,
+                "enableMavenLocalRepository": false,
+                "enableNpmLocalRepository": false,
+                "enablePypiLocalRepository": false,
+                "enableSbtLocalRepository": false,
+                "enableSwiftLocalRepository": false
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "7651",
+      "name": "devcon-demo-6",
+      "sourceControlOrgs": [
+        {
+          "name": "devcon-demo-6",
+          "managed": true,
+          "environment": "nonprod",
+          "config": {
+            "description": "devcon-demo-6",
+            "billingEmail": "devcon-demo-6@acme.com",
+            "blog": "",
+            "email": "devcon-demo-6@acme.com"
+          }
+        }
+      ],
+      "secrets": {
+        "vault": {
+          "namespaces": [
+            {
+              "environment": "nonprod",
+              "name": "devcon-demo-6",
+              "managed": true
+            }
+          ]
+        }
+      },
+      "artifacts": {
+        "artifactory": {
+          "repositories": [
+            {
+              "name": "devcon-demo-6",
+              "managed": true,
+              "environment": "nonprod",
               "config": {
                 "enableCocoapodsLocalRepository": false,
                 "enableCondaLocalRepository": false,
