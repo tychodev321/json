@@ -1,322 +1,110 @@
 {
   "domainCollections": [
-    {
-      "id": "1234",
-      "name": "devcon-demo-2",
-      "sourceControlOrgs": [
-        {
-          "name": "devcon-demo-2",
-          "managed": true,
-          "environment": "nonprod",
-          "config": {
-            "description": "devcon-demo-2",
-            "billingEmail": "devcon-demo-2@acme.com",
-            "blog": "",
-            "email": "devcon-demo-2@acme.com"
+      {
+    "id": "2",
+    "name": "devcon-demo-2",
+    "eksClusterIds": [],
+    "accountIds": [
+      "3",
+      "4"
+    ],
+    "createdBy": "test-user",
+    "ownedBy": "test-user",
+    "dud": "test-dud",
+    "sourceControlOrgs": [
+      {
+        "name": "devcon-demo-2",
+        "managed": true,
+        "environment": "nonprod",
+        "config": {
+          "description": "devcon-demo-2",
+          "blog": "",
+          "email": "devcon-demo-2@acme.com"
+        }
+      }
+    ],
+    "secrets": {
+      "vault": {
+        "namespaces": [
+          {
+            "environment": "nonprod",
+            "name": "devcon-demo-2",
+            "managed": true
           }
-        }
-      ],
-      "secrets": {
-        "vault": {
-          "namespaces": [
-            {
-              "environment": "nonprod",
-              "name": "devcon-demo-2",
-              "managed": true
-            }
-          ]
-        }
-      },
-      "artifacts": {
-        "artifactory": {
-          "repositories": [
-            {
-              "name": "devcon-demo-2",
-              "managed": true,
-              "environment": "nonprod",
-              "config": {
-                "enableCocoapodsLocalRepository": false,
-                "enableCondaLocalRepository": false,
-                "enableDockerV2LocalRepository": true,
-                "enableGenericLocalRepository": false,
-                "enableGoLocalRepository": false,
-                "enableGradleLocalRepository": false,
-                "enableHelmLocalRepository": false,
-                "enableMavenLocalRepository": false,
-                "enableNpmLocalRepository": false,
-                "enablePypiLocalRepository": false,
-                "enableSbtLocalRepository": false,
-                "enableSwiftLocalRepository": false
-              }
-            }
-          ]
-        }
+        ]
       }
     },
-    {
-      "id": "8745",
-      "name": "devcon-demo-3",
-      "sourceControlOrgs": [
-        {
-          "name": "devcon-demo-3",
-          "managed": true,
-          "environment": "nonprod",
-          "config": {
-            "description": "devcon-demo-3",
-            "billingEmail": "devcon-demo-4@acme.com",
-            "blog": "",
-            "email": "devcon-demo-4@acme.com"
+    "pipeline": {
+      "jenkins": {},
+      "harness": {}
+    },
+    "artifacts": {
+      "artifactory": {
+        "repositories": [
+          {
+            "name": "devcon-demo-2",
+            "environment": "nonprod",
+            "managed": true,
+            "config": {
+              "enableCocoapodsLocalRepository": false,
+              "enableCondaLocalRepository": false,
+              "enableDockerV2LocalRepository": true,
+              "enableGenericLocalRepository": false,
+              "enableGoLocalRepository": false,
+              "enableGradleLocalRepository": false,
+              "enableHelmLocalRepository": false,
+              "enableMavenLocalRepository": false,
+              "enableNpmLocalRepository": false,
+              "enablePypiLocalRepository": false,
+              "enableSbtLocalRepository": false,
+              "enableSwiftLocalRepository": false
+            }
           }
-        }
-      ],
-      "secrets": {
-        "vault": {
-          "namespaces": [
-            {
-              "environment": "nonprod",
-              "name": "devcon-demo-3",
-              "managed": true
-            }
-          ]
-        }
-      },
-      "artifacts": {
-        "artifactory": {
-          "repositories": [
-            {
-              "name": "devcon-demo-3",
-              "managed": true,
-              "environment": "nonprod",
-              "config": {
-                "enableCocoapodsLocalRepository": false,
-                "enableCondaLocalRepository": false,
-                "enableDockerV2LocalRepository": true,
-                "enableGenericLocalRepository": false,
-                "enableGoLocalRepository": false,
-                "enableGradleLocalRepository": false,
-                "enableHelmLocalRepository": false,
-                "enableMavenLocalRepository": false,
-                "enableNpmLocalRepository": false,
-                "enablePypiLocalRepository": false,
-                "enableSbtLocalRepository": false,
-                "enableSwiftLocalRepository": false
-              }
-            }
-          ]
-        }
+        ]
       }
     },
-    {
-      "id": "5464",
-      "name": "devcon-demo-4",
-      "sourceControlOrgs": [
-        {
-          "name": "devcon-demo-4",
-          "managed": true,
-          "environment": "nonprod",
-          "config": {
-            "description": "devcon-demo-4",
-            "billingEmail": "devcon-demo-4@acme.com",
-            "blog": "",
-            "email": "devcon-demo-4@acme.com"
-          }
-        }
-      ],
-      "secrets": {
-        "vault": {
-          "namespaces": [
-            {
-              "environment": "nonprod",
-              "name": "devcon-demo-4",
-              "managed": true
-            }
-          ]
-        }
-      },
-      "artifacts": {
-        "artifactory": {
-          "repositories": [
-            {
-              "name": "devcon-demo-4",
-              "managed": true,
-              "environment": "nonprod",
-              "config": {
-                "enableCocoapodsLocalRepository": false,
-                "enableCondaLocalRepository": false,
-                "enableDockerV2LocalRepository": true,
-                "enableGenericLocalRepository": false,
-                "enableGoLocalRepository": false,
-                "enableGradleLocalRepository": false,
-                "enableHelmLocalRepository": false,
-                "enableMavenLocalRepository": false,
-                "enableNpmLocalRepository": false,
-                "enablePypiLocalRepository": false,
-                "enableSbtLocalRepository": false,
-                "enableSwiftLocalRepository": false
-              }
-            }
-          ]
-        }
+    "quality": {
+      "sonarqube": {
+        "url": "test-url.com",
+        "project": "test-project-name"
       }
     },
-    {
-      "id": "7832",
-      "name": "devcon-demo-5",
-      "sourceControlOrgs": [
-        {
-          "name": "devcon-demo-5",
-          "managed": true,
-          "environment": "nonprod",
-          "config": {
-            "description": "devcon-demo-5",
-            "billingEmail": "devcon-demo-5@acme.com",
-            "blog": "",
-            "email": "devcon-demo-5@acme.com"
+    "domains": [
+      {
+        "name": "devcon-domain-2",
+        "k8NamespaceIds": [],
+        "sourceControlOrgs": [
+          {
+            "name": "devcon-source-control",
+            "managed": true
           }
-        }
-      ],
-      "secrets": {
-        "vault": {
-          "namespaces": [
-            {
-              "environment": "nonprod",
-              "name": "devcon-demo-5",
+        ],
+        "secrets": {
+          "vault": {
+            "namespaces": {
+              "environment": "dev",
+              "name": "devcon-namespace",
+              "mountPath": "devcon-mountPath",
               "managed": true
             }
-          ]
-        }
-      },
-      "artifacts": {
-        "artifactory": {
-          "repositories": [
-            {
-              "name": "devcon-demo-5",
-              "managed": true,
-              "environment": "nonprod",
-              "config": {
-                "enableCocoapodsLocalRepository": false,
-                "enableCondaLocalRepository": false,
-                "enableDockerV2LocalRepository": true,
-                "enableGenericLocalRepository": false,
-                "enableGoLocalRepository": false,
-                "enableGradleLocalRepository": false,
-                "enableHelmLocalRepository": false,
-                "enableMavenLocalRepository": false,
-                "enableNpmLocalRepository": false,
-                "enablePypiLocalRepository": false,
-                "enableSbtLocalRepository": false,
-                "enableSwiftLocalRepository": false
-              }
+          }
+        },
+        "artifacts": {
+          "artifactory": {
+            "repositories": {
+              "name": "devcon-name",
+              "managed": "true",
+              "environment": "dev"
             }
-          ]
-        }
-      }
-    },
-    {
-      "id": "7651",
-      "name": "devcon-demo-6",
-      "sourceControlOrgs": [
-        {
-          "name": "devcon-demo-6",
-          "managed": true,
-          "environment": "nonprod",
-          "config": {
-            "description": "devcon-demo-6",
-            "billingEmail": "devcon-demo-6@acme.com",
-            "blog": "",
-            "email": "devcon-demo-6@acme.com"
+          }
+        },
+        "pipeline": {
+          "harness": {
+            "project": "devcon-pipeline"
           }
         }
-      ],
-      "secrets": {
-        "vault": {
-          "namespaces": [
-            {
-              "environment": "nonprod",
-              "name": "devcon-demo-6",
-              "managed": true
-            }
-          ]
-        }
-      },
-      "artifacts": {
-        "artifactory": {
-          "repositories": [
-            {
-              "name": "devcon-demo-6",
-              "managed": true,
-              "environment": "nonprod",
-              "config": {
-                "enableCocoapodsLocalRepository": false,
-                "enableCondaLocalRepository": false,
-                "enableDockerV2LocalRepository": true,
-                "enableGenericLocalRepository": false,
-                "enableGoLocalRepository": false,
-                "enableGradleLocalRepository": false,
-                "enableHelmLocalRepository": false,
-                "enableMavenLocalRepository": false,
-                "enableNpmLocalRepository": false,
-                "enablePypiLocalRepository": false,
-                "enableSbtLocalRepository": false,
-                "enableSwiftLocalRepository": false
-              }
-            }
-          ]
-        }
       }
-    },
-    {
-      "id": "5384",
-      "name": "devcon-demo-7",
-      "sourceControlOrgs": [
-        {
-          "name": "devcon-demo-7",
-          "managed": true,
-          "environment": "nonprod",
-          "config": {
-            "description": "devcon-demo-7",
-            "billingEmail": "devcon-demo-7@acme.com",
-            "blog": "",
-            "email": "devcon-demo-7@acme.com"
-          }
-        }
-      ],
-      "secrets": {
-        "vault": {
-          "namespaces": [
-            {
-              "environment": "nonprod",
-              "name": "devcon-demo-7",
-              "managed": true
-            }
-          ]
-        }
-      },
-      "artifacts": {
-        "artifactory": {
-          "repositories": [
-            {
-              "name": "devcon-demo-7",
-              "managed": true,
-              "environment": "nonprod",
-              "config": {
-                "enableCocoapodsLocalRepository": false,
-                "enableCondaLocalRepository": false,
-                "enableDockerV2LocalRepository": true,
-                "enableGenericLocalRepository": false,
-                "enableGoLocalRepository": false,
-                "enableGradleLocalRepository": false,
-                "enableHelmLocalRepository": false,
-                "enableMavenLocalRepository": false,
-                "enableNpmLocalRepository": false,
-                "enablePypiLocalRepository": false,
-                "enableSbtLocalRepository": false,
-                "enableSwiftLocalRepository": false
-              }
-            }
-          ]
-        }
-      }
-    }
+    ]
+  }
   ]
 }
